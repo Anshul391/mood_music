@@ -68,7 +68,10 @@ The goal of this project is to create a seamless, intelligent tool that enhances
 
 
 # Contact Info
-- Rishabh Kumar
+- Developer: Rishabh Kumar
 - Email: rkumar23@uw.edu
 - Git: rishabhk22
-- Role: Developer
+
+- Client: Anshul Prakash
+- Email: anshul39@uw.edu
+- Git: anshul391
