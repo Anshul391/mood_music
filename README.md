@@ -28,6 +28,8 @@ The goal of this project is to create a seamless, intelligent tool that enhances
 ---
 
 ## Screen:
+![Mood Music UI](https://raw.githubusercontent.com/Anshul391/mood_music/main/MoodMusic1.png)
+
 
 ## User Flow
 
