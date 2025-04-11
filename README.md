@@ -1,94 +1,23 @@
-# Media Background Song Suggester
-
-This app allows users to upload a form of media (image, video, or short clip), and it suggests songs that would fit well as background music for use in reels, posts, or other social media content. It analyzes the content and mood of the media to recommend matching music tracks.
-
-## Features
-
-- Upload media (images, videos)
-- Analyze media for mood, scene, and tempo
-- Suggest background music from a curated or API-based library
-- Option to preview the media with suggested songs
-- Easy sharing or download of final media
-
-# Target Users & Their Needs
-
-## 1. Social Media Creators
-**Who they are:**  
-Influencers, content creators, and everyday users posting on platforms like Instagram, TikTok, YouTube Shorts, etc.
-
-**Needs:**
-- Quick and easy music recommendations for their media
-- Music that aligns with current trends
-- Ability to preview content before posting
-- Access to royalty-free or platform-approved songs
-
----
-
-## 2. Video Editors / Marketers
-**Who they are:**  
-Freelancers, video marketers, and creative agencies making content for brands or clients.
-
-**Needs:**
-- High-quality song suggestions based on mood or scene
-- Efficient tools to avoid manual song searching
-- Integration with editing software or export options
-- License-safe music options for commercial use
-
----
-
-## 3. Students / Hobbyists
-**Who they are:**  
-Beginners or hobbyists creating personal projects, school assignments, or fun edits.
-
-**Needs:**
-- User-friendly interface with minimal technical setup
-- Inspiration for creative edits
-- Easy-to-understand mood matching
-- Free or low-cost music options
-
----
-
-## 4. Musicians / Indie Artists
-**Who they are:**  
-Artists looking to promote their own music by matching it with relevant visual content.
-
-**Needs:**
-- A way to test how their tracks fit different types of media
-- Insights into what moods or visuals suit their songs
-- Opportunity to showcase their music to other users (optional feature)
-
----
-
-## 5. Content Strategists / Brand Managers
-**Who they are:**  
-Professionals who plan and oversee brand content strategies on social platforms.
-
-**Needs:**
-- Music that aligns with brand tone and voice
-- Batch processing for multiple pieces of content
-- Consistent mood/style recommendations
-- Analytics on music impact (optional advanced feature)
-
----
 # Expected Outcome
 
 The goal of this project is to create a seamless, intelligent tool that enhances content creation by automatically recommending background music that matches the mood and context of the user's media. By the end of development, the app should:
 
-## Core Outcomes
+## Core Outcomes/Features
 
-- **Effortless Song Discovery:**  
-  Users can upload media and receive instant, relevant background music suggestions without manual searching.
+### Effortless Song Discovery
+- Users can upload media and receive instant, relevant background music suggestions without manual searching.
 
-- **Mood-Matching Recommendations:**  
-  The app accurately analyzes the media to detect mood, tone, or tempo and recommends music that enhances the overall feel.
+### Mood-Matching Recommendations
+- The app accurately analyzes the media to detect mood, tone, or tempo and recommends music that enhances the overall feel.
 
-- **Content-Ready Output:**  
-  Users can preview, download, or share the media with the suggested background song, streamlining the content creation workflow.
-
-## Intelligence & Relevance
-
+### Intelligence & Relevance
 - Suggestions are personalized to the media's emotional or aesthetic characteristics.
 - Songs are pulled from a curated or API-connected library (e.g., Spotify, YouTube Audio Library, etc.).
+
+## Target Users & Their Needs
+
+- **Social Media Creators**
+- **Students / Hobbyists**
 
 ## User Impact
 
@@ -96,11 +25,41 @@ The goal of this project is to create a seamless, intelligent tool that enhances
 - Improves the emotional engagement of content through well-matched background music.
 - Helps creators stay on-trend with music choices that resonate with their audience.
 
-## Business/Platform Benefits
+---
 
-- Increased user retention through smart, interactive features.
-- Potential for API partnerships with music platforms or content creation tools.
-- Scalable to handle different types of media and music libraries.
+## Screen:
 
+## User Flow
 
+1. User uploads an image  
+2. Selects options like theme, language, genre, etc.  
+3. Image is analyzed with preferences  
+4. Four music options are shared  
+5. The music can be played on the screen  
 
+---
+
+# Timeline
+
+| Week | Focus Area                | Key Tasks                                                                 |
+|------|---------------------------|---------------------------------------------------------------------------|
+| 1    | Planning & Research       | Finalize MVP features, research music APIs, choose tech stack             |
+| 2    | Architecture & UI/UX     | Design wireframes, plan backend/database, map user flow                   |
+| 3    | Media Upload & Handling  | Build upload UI, set up backend media storage, implement validation, display preview |
+| 4    | Media Analysis Engine (1) | Analyze image for mood (visual), integrate ML libraries or mood-detection models |
+| 5    | Media Analysis Engine (2) | Add audio/scene analysis, map mood to music genres                        |
+| 6    | Music Recommendation      | Integrate music API or dataset, match media to songs, display suggestions |
+| 7    | Preview System            | Enable audio-overlay previews, sync music with video, let users choose preferred track |
+| 8    | Testing and Feedback      | Internal QA, limited beta test, gather user feedback, fix bugs, and test with users |
+| 9    | Launch                    | Final UI polish, build landing page, prep launch content, go live on platforms |
+
+---
+
+# Challenges
+
+| Challenge                | Details                                                                 |
+|-------------------------|-------------------------------------------------------------------------|
+| Mood Detection Accuracy | Interpreting mood from visuals/audio is subjective and depends on high-quality training data and models. |
+| Handling Diverse Media  | Users may upload anything from vibrant reels to grayscale photos — accurate analysis across formats might be tricky. |
+| Feature Implementation  | Real-time music playing with full or part audio and volume control.     |
+| Scene Understanding     | Automatically identifying "what's happening" in an image (e.g., beach scene vs. party) will require advanced ML/AI techniques. |
