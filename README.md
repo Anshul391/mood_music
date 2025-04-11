@@ -65,3 +65,10 @@ The goal of this project is to create a seamless, intelligent tool that enhances
 | Handling Diverse Media  | Users may upload anything from vibrant reels to grayscale photos — accurate analysis across formats might be tricky. |
 | Feature Implementation  | Real-time music playing with full or part audio and volume control.     |
 | Scene Understanding     | Automatically identifying "what's happening" in an image (e.g., beach scene vs. party) will require advanced ML/AI techniques. |
+
+
+# Contact Info
+- Rishabh Kumar
+- Email: rkumar23@uw.edu
+- Git: rishabhk22
+- Role: Developer
