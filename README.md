@@ -1,3 +1,36 @@
+# Installation Instructions
+
+Follow these simple steps to set up and run MoodMusic locally:
+
+
+## Setup Instructions
+
+### 1. Clone the repository:
+```bash
+git clone https://github.com/rishabhk22/allfit510.git
+cd allfit510
+```
+
+### 2. Create and activate a virtual environment:
+```bash
+On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+ On Windows
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+### 4. Run:
+```bash
+python -m streamlit run app.py
+```
+
 # Expected Outcome
 
 The goal of this project is to create a seamless, intelligent tool that enhances content creation by automatically recommending background music that matches the mood and context of the user's media. By the end of development, the app should:
