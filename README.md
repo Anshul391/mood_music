@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 ### 4. Run:
 ```bash
-python -m streamlit run app.py
+python -m streamlit run mood_selector_app.py
 ```
 
 # Expected Outcome
