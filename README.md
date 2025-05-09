@@ -8,7 +8,7 @@ Follow these simple steps to set up and run MoodMusic locally:
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/Anshul391/mood_music.git
-cd allfit510
+cd mood_music
 ```
 
 ### 2. Create and activate a virtual environment:
