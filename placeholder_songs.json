@@ -1,0 +1,17 @@
+[
+  {"mood": "Bright and Happy", "genre": "Pop", "language": "English", "activity": "Workout", "song": "Happy", "artist": "Pharrell Williams"},
+  {"mood": "Bright and Happy", "genre": "Pop", "language": "Spanish", "activity": "Party", "song": "Vivir Mi Vida", "artist": "Marc Anthony"},
+  {"mood": "Warm and Energetic", "genre": "Rock", "language": "English", "activity": "Workout", "song": "Eye of the Tiger", "artist": "Survivor"},
+  {"mood": "Warm and Energetic", "genre": "Hip Hop", "language": "English", "activity": "Driving", "song": "Lose Yourself", "artist": "Eminem"},
+  {"mood": "Cool and Calm", "genre": "Indie", "language": "English", "activity": "Study", "song": "Holocene", "artist": "Bon Iver"},
+  {"mood": "Cool and Calm", "genre": "Classical", "language": "English", "activity": "Relax", "song": "Clair de Lune", "artist": "Claude Debussy"},
+  {"mood": "Mellow and Relaxed", "genre": "Jazz", "language": "English", "activity": "Relax", "song": "What a Wonderful World", "artist": "Louis Armstrong"},
+  {"mood": "Mellow and Relaxed", "genre": "Electronic", "language": "French", "activity": "Study", "song": "La Femme d'Argent", "artist": "Air"},
+  {"mood": "Bright and Happy", "genre": "Pop", "language": "Hindi", "activity": "Party", "song": "Kala Chashma", "artist": "Amar Arshi"},
+  {"mood": "Warm and Energetic", "genre": "Rock", "language": "Spanish", "activity": "Workout", "song": "La Camisa Negra", "artist": "Juanes"},
+  {"mood": "Cool and Calm", "genre": "Jazz", "language": "English", "activity": "Study", "song": "Take Five", "artist": "The Dave Brubeck Quartet"},
+  {"mood": "Mellow and Relaxed", "genre": "Pop", "language": "Korean", "activity": "Relax", "song": "Spring Day", "artist": "BTS"},
+  {"mood": "Bright and Happy", "genre": "Electronic", "language": "French", "activity": "Driving", "song": "D.A.N.C.E.", "artist": "Justice"},
+  {"mood": "Warm and Energetic", "genre": "Pop", "language": "Japanese", "activity": "Workout", "song": "Paprika", "artist": "Foorin"},
+  {"mood": "Cool and Calm", "genre": "Classical", "language": "English", "activity": "Meditation", "song": "Gymnopédie No.1", "artist": "Erik Satie"}
+] 
