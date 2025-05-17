@@ -2,7 +2,6 @@
 
 Follow these simple steps to set up and run MoodMusic locally:
 
-
 ## Setup Instructions
 
 ### 1. Clone the repository:
@@ -13,11 +12,11 @@ cd mood_music
 
 ### 2. Create and activate a virtual environment:
 ```bash
-On macOS/Linux
+# On macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
 
- On Windows
+# On Windows
 python -m venv venv
 venv\Scripts\activate
 ```
@@ -26,9 +25,28 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Run:
+
+### 4. Add your API keys:
+Store your secrets in `.streamlit/secrets.toml`. Example:
+```toml
+[azure_openai]
+api_key = "your-azure-openai-key"
+endpoint = "https://your-openai-endpoint.openai.azure.com/"
+deployment_name = "gpt35-mood"
+api_version = "2024-02-15-preview"
+
+[azure_cv]
+api_key = "your-cv-api-key"
+endpoint = "https://your-cv-endpoint.cognitiveservices.azure.com/"
+
+[spotify]
+client_id = "your-spotify-client-id"
+client_secret = "your-spotify-client-secret"
+```
+
+### 5. Run the app:
 ```bash
-python -m streamlit run mood_selector_app.py
+python -m streamlit run moodmusic_azure_spotify_app.py
 ```
 
 # Expected Outcome
@@ -45,12 +63,13 @@ The goal of this project is to create a seamless, intelligent tool that enhances
 
 ### Intelligence & Relevance
 - Suggestions are personalized to the media's emotional or aesthetic characteristics.
-- Songs are pulled from a curated or API-connected library (e.g., Spotify, YouTube Audio Library, etc.).
+- Songs are pulled from a curated or API-connected library (e.g., Spotify Preview API).
 
 ## Target Users & Their Needs
 
 - **Social Media Creators**
 - **Students / Hobbyists**
+- **Content Designers / Marketers**
 
 ## User Impact
 
@@ -63,14 +82,14 @@ The goal of this project is to create a seamless, intelligent tool that enhances
 ## Screen:
 ![Mood Music UI](https://raw.githubusercontent.com/Anshul391/mood_music/main/MoodMusic1.png)
 
-
 ## User Flow
 
 1. User uploads an image  
 2. Selects options like theme, language, genre, etc.  
 3. Image is analyzed with preferences  
-4. Four music options are shared  
-5. The music can be played on the screen  
+4. Music mood is generated using Azure OpenAI  
+5. Spotify Preview API fetches top matching tracks  
+6. Music previews are embedded and linked to Spotify  
 
 ---
 
@@ -99,12 +118,11 @@ The goal of this project is to create a seamless, intelligent tool that enhances
 | Feature Implementation  | Real-time music playing with full or part audio and volume control.     |
 | Scene Understanding     | Automatically identifying "what's happening" in an image (e.g., beach scene vs. party) will require advanced ML/AI techniques. |
 
-
 # Contact Info
-- Developer: Rishabh Kumar
-- Email: rkumar23@uw.edu
-- Git: rishabhk22
+- Developer: Rishabh Kumar  
+  Email: rkumar23@uw.edu  
+  GitHub: [rishabhk22](https://github.com/rishabhk22)
 
-- Client: Anshul Prakash
-- Email: anshul39@uw.edu
-- Git: anshul391
+- Client: Anshul Prakash  
+  Email: anshul39@uw.edu  
+  GitHub: [anshul391](https://github.com/anshul391)
