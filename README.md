@@ -1,3 +1,93 @@
+# MoodMusic Pro
+
+## Overview
+MoodMusic Pro is an AI-powered web app that recommends music based on your mood, detected from a photo, and your preferences (genre, language, activity). The app uses Azure Computer Vision and Azure OpenAI for mood detection, and integrates with the Spotify API to provide real song previews. The UI/UX is modern, compact, and responsive.
+
+---
+
+## 🏆 Milestone 2 Rubric Checklist
+
+### 1. Feature Completion
+- [x] **Photo-based mood detection** using Azure Computer Vision and Azure OpenAI
+- [x] **User preferences**: genre, language, activity
+- [x] **Spotify integration**: real-time search and 30s preview for recommended songs
+- [x] **Modern UI/UX**: compact, two-column layout, responsive, dark mode ready
+- [x] **Placeholder fallback**: demo mode with curated song list if AI quota is unavailable
+
+### 2. Bug Fixes & Feedback Handling
+- [x] Addressed all major client feedback:
+  - Removed duplicate photo display
+  - Removed mood color swatch and animations
+  - Moved photo upload to right column, results below
+  - Reduced scrolling and improved layout
+  - Improved Spotify fallback and error handling
+- [x] Fixed Spotify API search and preview issues
+- [x] Waiting for quota approval on AzureAI
+
+
+### 3. Client Code Review
+- [x] Client reviewed and approved all major UI/UX and backend changes
+- [x] Client feedback incorporated iteratively throughout development
+
+### 4. README – Setup & Usage
+
+#### **Setup**
+1. Clone the repository and navigate to the project folder.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Add your API keys to `.streamlit/secrets.toml`:
+   ```toml
+   [azure_cv]
+   api_key = "YOUR_AZURE_CV_KEY"
+   endpoint = "YOUR_AZURE_CV_ENDPOINT"
+
+   [azure_openai]
+   api_key = "YOUR_AZURE_OPENAI_KEY"
+   endpoint = "YOUR_AZURE_OPENAI_ENDPOINT"
+   deployment_name = "YOUR_DEPLOYMENT_NAME"
+   api_version = "2024-02-15-preview"
+
+   [spotify]
+   client_id = "YOUR_SPOTIFY_CLIENT_ID"
+   client_secret = "YOUR_SPOTIFY_CLIENT_SECRET"
+   ```
+4. (Optional) Enable dark mode by adding to `.streamlit/config.toml`:
+   ```toml
+   [theme]
+   base="dark"
+   ```
+5. Run the app:
+   ```bash
+   streamlit run mood_selector_app.py
+   ```
+
+#### **Usage**
+- Enter your name and select your music preferences (genre, language, activity) on the left.
+- Upload or take a photo on the right.
+- Click "Process Photo and Get Music" to receive mood-based music recommendations with Spotify previews.
+
+---
+
+### 5. README – Progress & Issues
+
+#### **Progress**
+- All planned features for Milestone 2 are implemented and functional.
+- UI/UX has been overhauled for clarity, compactness, and responsiveness.
+- Azure and Spotify integrations are robust, with fallback for demo mode.
+- All major client feedback and bug reports have been addressed.
+
+#### **Known Issues**
+- Some Spotify tracks may not have a preview available due to API limitations.
+- Azure OpenAI quota or deployment issues may require fallback to placeholder/demo mode.
+- If you encounter API errors, double-check your credentials and deployment names.
+
+---
+
+## Contact & Feedback
+For questions, feedback, or issues, please open an issue or contact the developer.
+
 # Installation Instructions
 
 Follow these simple steps to set up and run MoodMusic locally:
@@ -126,3 +216,23 @@ The goal of this project is to create a seamless, intelligent tool that enhances
 - Client: Anshul Prakash  
   Email: anshul39@uw.edu  
   GitHub: [anshul391](https://github.com/anshul391)
+
+---
+
+## Next Steps
+
+- **Spotify Integration:**
+  - Continue to test and ensure Spotify API search and preview are working for a wide range of songs and user preferences.
+  - Monitor for any API rate limits or credential issues.
+
+- **Azure OpenAI Quota:**
+  - Await quota approval for Azure OpenAI to enable full AI-powered mood detection for all users.
+  - Once approved, remove or reduce reliance on placeholder/demo mode.
+
+- **User Feedback:**
+  - Gather more user feedback on UI/UX and music recommendation quality.
+  - Iterate on design and features based on real user testing.
+
+- **Further Enhancements:**
+  - Add more personalization, playlist saving, or sharing features.
+  - Explore additional music APIs or expand to video content.
