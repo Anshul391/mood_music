@@ -1,0 +1,14 @@
+[azure_cv]
+api_key = "4tyRISjNJEqLwFg4V3WEWZDLo2ysbznw1DabNKh1sB6XdbJTwW79JQQJ99BEACYeBjFXJ3w3AAAFACOGJfjq"
+endpoint = "https://techinno.cognitiveservices.azure.com/"
+
+[azure_openai]
+api_version = "2025-01-01-preview"
+endpoint = "https://rkuma-mavdd55y-eastus2.cognitiveservices.azure.com/"
+api_key = "31qckM6E007z72OCPnWz8bt88jTGY1N5jtQHSy57cV6bCbS1sc0sJQQJ99BEACHYHv6XJ3w3AAAAACOGlG10"
+deployment_name = "gpt-4.1"
+
+[spotify]
+client_id = "a3b3f365b7b74bc6a3a6f27e296732d4"
+client_secret = "f4b4a9850fc24184957cc03e81955bcf"
+
