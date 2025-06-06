@@ -1,4 +1,4 @@
-# MoodMusic Pro
+# MoodMusic
 
 ## Overview
 MoodMusic Pro is an AI-powered web app that recommends music based on your mood, detected from a photo, and your preferences (genre, language, activity). The app uses Azure Computer Vision and Azure OpenAI for mood detection, and integrates with the Spotify API to provide real song previews. The UI/UX is modern, compact, and responsive.
@@ -60,7 +60,10 @@ MoodMusic Pro is an AI-powered web app that recommends music based on your mood,
    ```
 5. Run the app:
    ```bash
-   streamlit run mood_selector_app.py
+   streamlit run mood_selector_app.py #for music suggestions with Spotify
+   ```
+    ```bash
+   streamlit run mood_music.py #for music preview with Deezer
    ```
 
 #### **Usage**
